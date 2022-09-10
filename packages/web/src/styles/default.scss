@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Basier Circle";
+  src: url("/fonts/BasierCircle-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Basier Circle";
+  src: url("/fonts/BasierCircle-Medium.woff2");
+  font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Basier Circle";
+  src: url("/fonts/BasierCircle-Semibold.woff2");
+  font-style: bold;
+  font-weight: 600;
+  font-display: swap;
+}
+
+
+.carousel-wrapper {
+  @media (max-width: 800px) {
+    display: flex!important;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    > div, > img {
+      scroll-snap-align: start
+    }
+  }
+}
