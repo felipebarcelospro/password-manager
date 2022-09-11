@@ -17,7 +17,7 @@ type DefaultLayoutProps = {
 export const DefaultLayout = ({
   children,
   metadata = {
-    title: 'Sem título · Omnirepo`',
+    title: 'Sem título · Password Manager',
     description: '',
     image: '',
     noIndex: false,
