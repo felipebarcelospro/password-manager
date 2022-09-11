@@ -1,5 +1,4 @@
 import React from 'react'
-
 import axios from 'axios'
 
 import {
@@ -10,12 +9,12 @@ import {
   ModalBody,
   ModalCloseButton
 } from '@chakra-ui/react'
-
 import { Form, FormLayout, Field, SubmitButton } from '@saas-ui/react'
-
+import { yupResolver } from '@hookform/resolvers/yup'
 import { ModalCreateProps } from './types'
 import { useRouter } from 'next/router'
 import { PasswordGenerator } from './components/password-generator'
+import { modalCreateFormSchema } from './schemas'
 
 export const ModalCreate = ({
   isOpen,
@@ -40,7 +39,10 @@ export const ModalCreate = ({
         <ModalHeader>Save a password</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
-          <Form onSubmit={onSubmit}>
+          <Form
+            onSubmit={onSubmit}
+            resolver={yupResolver(modalCreateFormSchema)}
+          >
             <FormLayout>
               <Field
                 name="name"
@@ -77,7 +79,9 @@ export const ModalCreate = ({
                 size="sm"
               />
 
-              <SubmitButton mb="4">Create Card</SubmitButton>
+              <SubmitButton mb="4" disableIfInvalid>
+                Create Card
+              </SubmitButton>
             </FormLayout>
           </Form>
         </ModalBody>

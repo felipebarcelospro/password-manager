@@ -8,7 +8,7 @@ const IndexPage: NextPage = () => {
   return (
     <DefaultLayout
       metadata={{
-        title: 'Minhas senhas · Password Manager'
+        title: 'Password Manager'
       }}
     >
       <MainPage />

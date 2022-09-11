@@ -17,7 +17,7 @@ type DefaultLayoutProps = {
 export const DefaultLayout = ({
   children,
   metadata = {
-    title: 'Sem título · Password Manager',
+    title: 'Password Manager',
     description: '',
     image: '',
     noIndex: false,
@@ -28,6 +28,9 @@ export const DefaultLayout = ({
     <>
       <Head>
         <title>{metadata.title}</title>
+
+        <link rel="icon" href="/images/favicon.png" />
+
         <meta name="title" content={metadata.title} />
         <meta name="description" content={metadata.description} />
         <meta
