@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+Almaden
+</h1>
 
-## Getting Started
+<p align="center">
+  <img alt="Developed by Paulo Henrique" src="https://img.shields.io/badge/Desenvolvido%20por-Paulo Henrique-%237519C1?style=for-the-badge"><br/>
+</p>
 
-First, run the development server:
+<hr>
+
+## Technologies Used
+
+- [X] [Next.Js](https://nextjs.org/) - V12.3.0
+- [X] [TypeScript](https://www.typescriptlang.org/) - V4.7.4
+- [X] [Chakra-UI](https://chakra-ui.com/) - V2.3.2
+- [X] [Prisma](https://www.prisma.io/) - V4.3.1
+- [X] [Axios](https://axios-http.com/) - V0.27.2
+- [X] [React-Icons](https://react-icons.github.io/react-icons/) - V4.4.0
+
+## Practices Used
+
+- [X] [SOLID](https://blog.betrybe.com/linguagem-de-programacao/solid-cinco-principios-poo/)
+
+### Prerequisites
+
+Before you start, you will need to have at your PC the following tools:
+[Git](https://git-scm.com).<br>
+[VSCode](https://code.visualstudio.com/).
+
+
+### 🎲 Getting start with the project
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clone this repository
+$ git clone <https://github.com/PHSChaves/test-frontend.git>
+
+# Go into the project directory at CMD
+$ cd test-frontend
+
+# Install the dependencies
+$ yarn
+
+# Start the project
+$ yarn dev
+
+# The server will start at <http://localhost:3000>
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
