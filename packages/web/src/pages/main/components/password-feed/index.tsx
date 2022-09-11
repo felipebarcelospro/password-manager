@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react'
 import { PasswordFeedCard } from './components/password-feed-card'
 import { PasswordFeedProps } from './types'
-import { Button, Card, CardBody, EmptyState } from '@saas-ui/react'
+import { Card, CardBody, EmptyState } from '@saas-ui/react'
 import { FiLock } from 'react-icons/fi'
 
 export const PasswordFeed = ({
@@ -44,9 +44,6 @@ export const PasswordFeed = ({
                 icon={FiLock}
                 title="No passwords yet"
                 description="You don't have any passwords yet. Click on the button below to add your first password."
-                actions={
-                  <Button label="Save a password" colorScheme="primary" />
-                }
               />
             </CardBody>
           </Card>
